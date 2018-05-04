@@ -28,7 +28,7 @@ class LoginSubsection extends Component {
                     <TextInput
                         style={styles.input_text}
                         placeholder={"Enter Mobile Number"}  
-                        keyboardType ='numeric  ' 
+                        keyboardType ={"phone-pad"}
                         maxLength ={10} 
                         placeholderTextColor={'rgb(211,211,211)'}  
                         underlineColorAndroid='transparent'
