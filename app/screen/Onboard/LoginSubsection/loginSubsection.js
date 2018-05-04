@@ -28,8 +28,8 @@ class LoginSubsection extends Component {
                     <TextInput
                         style={styles.input_text}
                         placeholder={"Enter Mobile Number"}  
-                        keyboardType ={"phone-pad"} 
-                        maxLength ={13} 
+                        keyboardType ='numeric  ' 
+                        maxLength ={10} 
                         placeholderTextColor={'rgb(211,211,211)'}  
                         underlineColorAndroid='transparent'
                         onChangeText = {(input) => this.setState({number: input})}

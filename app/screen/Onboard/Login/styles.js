@@ -1,6 +1,10 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet, Dimensions } from 'react-native';
 
 const styles = StyleSheet.create({
+	window: {
+		width: Dimensions.get("window").width,
+		height: Dimensions.get("window").height
+	},
 	wrapper: {
 		flex: 1,
 		paddingLeft: '7%',
@@ -9,8 +13,8 @@ const styles = StyleSheet.create({
 	backgroundImage: {
 		flex: 1,
 		resizeMode: 'cover', // or 'stretch'
-	  },
-	header_text: 	{
+	},
+	header_text: {
 		maxWidth: '80%',
 		marginTop: '25%',
 		paddingLeft: "25%",
@@ -18,7 +22,8 @@ const styles = StyleSheet.create({
 	},
 	text_header: {
 		color: 'black',
-		fontSize: 22
+		fontSize: 22,
+		fontWeight: 'bold'
 	},
 	skip_login: {
 		marginTop: "10%",

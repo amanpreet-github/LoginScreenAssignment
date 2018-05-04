@@ -14,6 +14,14 @@ class loginScreen extends Component {
     }
     render() {
         return (
+            <View style={styles.window}>
+                <ImageBackground style={{
+                    width: Dimensions.get("window").width,
+                    height: Dimensions.get("window").height / 3,
+                    backgroundColor: "#000", position: "absolute", opacity: 0.2
+                }}
+                    source={{ uri: 'https://static.fabhotels.com/img/main_banner_v1.png' }}>
+                </ImageBackground>
                 <View style={styles.wrapper}>
                     <View style={styles.header_text}>
                         <Text style={styles.text_header}>Log In/Sign Up</Text>
@@ -23,7 +31,9 @@ class loginScreen extends Component {
                         <Text style={styles.skip_text}>Skip</Text>
                     </View>
                 </View>
-            
+
+            </View>
+
         )
     }
 }
