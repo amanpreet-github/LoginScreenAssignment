@@ -12,7 +12,7 @@ const styles = StyleSheet.create({
 	},
 	backgroundImage: {
 		width: Dimensions.get("window").width,
-		height: Dimensions.get("window").height / 3,
+		height: Dimensions.get("window").height /3.5,
 		backgroundColor: "#000", position: "absolute", opacity: 0.2
 	},
 	header_text: {
@@ -30,7 +30,10 @@ const styles = StyleSheet.create({
 		marginTop: "10%",
 	},
 	skip_text: {
-		textAlign: 'center'
+		textAlign: 'center',
+		fontSize:12,
+		fontWeight:"bold",  
+		color:"#a5a4a4"
 	},
 });
 export default styles;

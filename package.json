@@ -21,9 +21,7 @@
   "dependencies": {
     "@expo/vector-icons": "^6.2.2",
     "aws-sdk": "^2.178.0",
-    "axios": "^0.17.1",
     "classnames": "^2.2.5",
-    "convert2graphql": "^1.0.1",
     "expo": "^23.0.4",
     "native-base": "^2.3.5",
     "react": "16.0.0",

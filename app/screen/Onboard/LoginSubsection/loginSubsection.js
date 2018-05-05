@@ -11,7 +11,6 @@ class LoginSubsection extends Component {
         this.state = {
             number: ''
         }
-        console.log('this---', this.props);
     }
 
     render() {
@@ -23,23 +22,23 @@ class LoginSubsection extends Component {
                     <Text style={styles.choice_text} >or</Text>
                 </View>
                 <View style={styles.input_details}>
-                    <CountrySelector  />
+                    <CountrySelector />
                     <TextInput
                         style={styles.input_text}
-                        placeholder={"Enter Mobile Number"}  
-                        keyboardType ={"phone-pad"}
-                        maxLength ={10} 
-                        placeholderTextColor={'rgb(211,211,211)'}  
+                        placeholder={"Enter Mobile Number"}
+                        keyboardType={"phone-pad"}
+                        maxLength={10}
+                        placeholderTextColor={'rgb(211,211,211)'}
                         underlineColorAndroid='transparent'
-                        onChangeText = {(input) => this.setState({number: input})}
-                        value = {this.state.number}
-                    ></TextInput>    
+                        onChangeText={(input) => this.setState({ number: input })}
+                        value={this.state.number}
+                    ></TextInput>
                 </View>
                 <View style={styles.continue_login}>
                     <Button
                         style={styles.continue_button}
                         warning
-                        onPress={() => {Alert.alert("Hey, We are working on it!")}}
+                        onPress={() => { Alert.alert("Hey, We are working on it!") }}
                     >
                         <Text>CONTINUE</Text>
                     </Button>

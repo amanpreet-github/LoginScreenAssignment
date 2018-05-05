@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
-import { View, Text,ImageBackground } from 'react-native'
+import { View, Text, ImageBackground, Alert, TouchableWithoutFeedback } from 'react-native'
 import styles from './styles'
+import { Button } from 'native-base'
 import LoginSubSection from '@screen/Onboard/LoginSubsection'
 class loginScreen extends Component {
     constructor(props) {
@@ -22,10 +23,11 @@ class loginScreen extends Component {
                     </View>
                     <LoginSubSection />
                     <View style={styles.skip_login}>
-                        <Text style={styles.skip_text}>Skip</Text>
+                        <TouchableWithoutFeedback onPress ={() => {Alert.alert('Hey, we are working on it!')}}>
+                            <Text style={styles.skip_text}>Skip</Text>
+                        </TouchableWithoutFeedback>
                     </View>
                 </View>
-
             </View>
 
         )

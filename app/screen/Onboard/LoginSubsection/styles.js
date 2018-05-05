@@ -6,7 +6,8 @@ const styles = StyleSheet.create({
         width: "100%",
         borderRadius: 8,
         backgroundColor: "white",
-        borderColor: "rgb(134,134,134)"
+        borderColor: "rgb(134,134,134)", 
+        borderWidth: 0.4
     },
     skip_login: {
         marginTop: "10%",
@@ -15,7 +16,8 @@ const styles = StyleSheet.create({
         textAlign: 'center'
     },
     box_text: {
-        textAlign: 'center'
+        textAlign: 'center', 
+        color: 'rgb(61, 60, 60)'
     },
     continue_login: {
         paddingLeft:"3%",
@@ -33,13 +35,12 @@ const styles = StyleSheet.create({
         textAlign:'center', 
         fontSize:22
     }, 
-    input_details: {
-        padding:"3%",  
+    input_details: {  
         flexDirection:"row", 
         borderBottomColor: '#ccc',
         borderBottomWidth: 1,
-        width:"96%",
-        marginLeft:"2%" 
+        width:"93%", 
+        marginLeft:"3%"  
     }, 
     input_text: {
         width:"100%",

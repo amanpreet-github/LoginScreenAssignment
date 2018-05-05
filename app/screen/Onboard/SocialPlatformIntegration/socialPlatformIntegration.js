@@ -16,7 +16,7 @@ class SocialPlatformIntegration extends Component {
                         onPress={() => {Alert.alert("Hey, We are working on it!")}}
                     >
                         <Image
-                            style={{ width: 20, height: 20  , marginRight: 5, marginTop:2 }}
+                            style={styles.intergration_google_logo}
                             source={require('../../../assets/img/google.png')}
                         />
                         <Text style={{ color: "white" }}>Google</Text>
@@ -26,7 +26,7 @@ class SocialPlatformIntegration extends Component {
                         onPress={() =>{Alert.alert("Hey, We are working on it!")}}
                     >
                         <Image
-                            style={{ width: 30, height: 30}}
+                            style={styles.intergration_facebook_logo}
                             source={require('../../../assets/img/fb.png')}          
                         />  
                         <Text style={{ color: 'white' }}>Facebook</Text>
