@@ -6,7 +6,7 @@ const styles = StyleSheet.create({
     },
     intergration_google_buttons: {
         paddingLeft: "10%",
-        paddingRight: "15%",
+        paddingRight: "13%",    
         marginTop: "5%",
         marginLeft: "3%",
         backgroundColor: 'rgb(219, 50, 54)'
