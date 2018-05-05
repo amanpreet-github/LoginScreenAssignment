@@ -1,6 +1,4 @@
 import React, { Component } from 'react'
-import { View, Text, NavFooter, TextInput } from 'react-native'
-import { Button } from 'native-base'
 import styles from './styles'
 import CountryPicker, {
     getAllCountries

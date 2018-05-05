@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
-import { View, Text, KeyboardAvoidingView, NavFooter, TextInput, TouchableOpacity, Alert } from 'react-native'
-import DeviceInfo from 'react-native-device-info'
+import { View, Text, TextInput, Alert } from 'react-native'
 import { Button } from 'native-base'
 import styles from './styles'
 import CountrySelector from '@screen/Onboard/CountrySelector'

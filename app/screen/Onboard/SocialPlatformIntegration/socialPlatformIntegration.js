@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
-import { View, Text, KeyboardAvoidingView, NavFooter, TextInput, TouchableOpacity, Image, Alert } from 'react-native'
-import DeviceInfo from 'react-native-device-info'
+import { View, Text, Image, Alert } from 'react-native'
 import { Button } from 'native-base'
 import styles from './styles'
 class SocialPlatformIntegration extends Component {

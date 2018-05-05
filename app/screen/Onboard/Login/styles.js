@@ -11,8 +11,9 @@ const styles = StyleSheet.create({
 		paddingRight: '7%',
 	},
 	backgroundImage: {
-		flex: 1,
-		resizeMode: 'cover', // or 'stretch'
+		width: Dimensions.get("window").width,
+		height: Dimensions.get("window").height / 3,
+		backgroundColor: "#000", position: "absolute", opacity: 0.2
 	},
 	header_text: {
 		maxWidth: '80%',
