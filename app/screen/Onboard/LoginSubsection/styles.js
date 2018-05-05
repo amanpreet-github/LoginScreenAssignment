@@ -2,7 +2,7 @@ import { StyleSheet } from 'react-native';
 const styles = StyleSheet.create({
     login_box: {
         paddingTop: "8%",
-        height: "55%", 
+        height: "52%", 
         width: "100%",
         borderRadius: 8,
         backgroundColor: "white",
@@ -40,7 +40,7 @@ const styles = StyleSheet.create({
         borderBottomColor: '#ccc',
         borderBottomWidth: 1,
         width:"93%", 
-        marginLeft:"3%"  
+        marginLeft:"3%",
     }, 
     input_text: {
         width:"100%",
