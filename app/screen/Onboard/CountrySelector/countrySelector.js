@@ -12,7 +12,7 @@ const ds = new ListView.DataSource({ rowHasChanged: (r1, r2) => r1 !== r2 })
 class CountrySelector extends React.PureComponent {
     constructor(props) {
         super(props);
-        let cca2, callingCode;
+        let cca2, callingCode, countryList = cca2List;
         cca2 = 'IN'
         callingCode = '+91'
 
@@ -23,6 +23,43 @@ class CountrySelector extends React.PureComponent {
             filter: '',
             dataValue: ds.cloneWithRows(cca2List),
         }
+
+
+        this.fuse = new Fuse(
+            countryList.reduce(
+                (acc, item) => [
+                    ...acc,
+                    { id: item, name: this.getCountryName(countries[item]) }
+                ],
+                []
+            ),
+            {
+                shouldSort: true,
+                threshold: 0.6,
+                maxPatternLength: 32,
+                minMatchCharLength: 1,
+                keys: ['name'],
+                id: 'id'
+            }
+        )
+    }
+    toggleModal() {
+        this.setState({
+            modalVisible: !this.state.modalVisible
+        })
+    }
+    onSelectCountry(cca2) {
+        this.setState({
+            modalVisible: false,
+            filter: '',
+            dataValue: cca2List
+        })
+    }
+
+
+    getCountryName(country, optionalTranslation) {
+        const translation = optionalTranslation || this.props.translation || 'eng'
+        return country.name[translation] || country.name.common
     }
     toggleModal() {
         this.setState({
@@ -49,6 +86,40 @@ class CountrySelector extends React.PureComponent {
     }
     _keyExtractor = (item, index) => { console.log("item", item); return index; };
 
+
+    handleFilterChange = value => {
+        console.log('values=======', value);
+        const filteredCountries =
+            value === '' ? cca2List : this.fuse.search(value)
+
+        // this._listView.scrollTo({ y: 0 })
+        console.log('filtered countries --------', filteredCountries);
+        this.setState({
+            filter: value,
+            dataValue: filteredCountries
+        })
+    }
+    FlatListItemSeparator = () => {
+        return (
+            <View
+                style={{
+                    height: 1,
+                    width: "100%",
+                    backgroundColor: "#607D8B",
+                }}
+            />
+        );
+    }
+    _keyExtractor = (item, index) => item;
+
+    _renderItem = ({ item }) => (
+        <MyListItem
+            id={item.id}
+            onPressItem={this._onPressItem}
+            selected={!!this.state.selected.get(item.id)}
+            title={item.title}
+        />
+    );
     render() {
         return (
             <View>
@@ -116,8 +187,8 @@ class CountrySelector extends React.PureComponent {
                     </View>
                 </Modal>
             </View>
-        )
+        );
     }
 }
 
-export default CountrySelector
+export default CountrySelector;

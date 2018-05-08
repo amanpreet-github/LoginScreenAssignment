@@ -11,16 +11,6 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
 	return {
-		facebookLogin: () => {
-			dispatch({
-				type: actions.commonActions.FACEBOOK_LOGIN,
-			});
-		},
-		googleLogin: () => {
-			dispatch({
-				type: actions.commonActions.GOOGLE_LOGIN,
-			});
-		},
 	};
 };
 
