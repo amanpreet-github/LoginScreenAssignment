@@ -12,9 +12,4 @@ const RootNavigator = StackNavigator(
 		initialRouteName: 'Login',
 	}
 );
-
-// export default () =>
-//   <Root>
-//     <RootNavigator />
-//   </Root>;
 export default  RootNavigator;
