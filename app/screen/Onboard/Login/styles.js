@@ -7,27 +7,27 @@ const styles = StyleSheet.create({
 	},
 	wrapper: {
 		flex: 1,
-		paddingLeft: '7%',
-		paddingRight: '7%',
+		paddingLeft: '5.5%',
+		paddingRight: '5.5%',
 	},
 	backgroundImage: {
 		width: Dimensions.get("window").width,
-		height: Dimensions.get("window").height /3.5,
-		backgroundColor: "#000", position: "absolute", opacity: 0.2
+		height: Dimensions.get("window").height ,
+		backgroundColor: "#000", position: "absolute",
 	},
 	header_text: {
 		maxWidth: '80%',
 		marginTop: '25%',
-		paddingLeft: "25%",
-		marginBottom: '8%',
+		paddingLeft: "27%",
+		marginBottom: '6%',
 	},
 	text_header: {
 		color: 'black',
-		fontSize: 22,
+		fontSize: 26,
 		fontWeight: 'bold'
 	},
 	skip_login: {
-		marginTop: "10%",
+		marginTop: "9%",
 	},
 	skip_text: {
 		textAlign: 'center',

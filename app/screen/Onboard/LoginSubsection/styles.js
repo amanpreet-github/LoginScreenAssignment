@@ -2,11 +2,10 @@ import { StyleSheet } from 'react-native';
 const styles = StyleSheet.create({
     login_box: {
         paddingTop: "8%",
-        height: "52%", 
         width: "100%",
-        borderRadius: 8,
+        borderRadius: 7,
         backgroundColor: "white",
-        borderColor: "rgb(134,134,134)", 
+        borderColor: "rgba(134,134,134, 0.5)",
         borderWidth: 0.4
     },
     skip_login: {
@@ -16,51 +15,59 @@ const styles = StyleSheet.create({
         textAlign: 'center'
     },
     box_text: {
-        textAlign: 'center', 
-        color: 'rgb(61, 60, 60)'
+        textAlign: 'center',
+        color: 'rgb(61, 60, 60)',
+        fontSize: 17,
+        fontWeight: 'normal'
     },
     continue_login: {
-        paddingLeft:"3%",
-        paddingRight:"3%", 
-        marginTop : "7%" 
+        paddingLeft: "3%",
+        paddingRight: "5%",
+        marginTop: "7%"
 
-    }, 
-    continue_button: {  
-        width:"100%",
-        paddingLeft : "35%",
-        marginBottom: "5%",
-        backgroundColor:"rgb(240,230,140) ", 
+    },
+    continue_button: {
+        width: "100%",
+        paddingLeft: "36.5%",
+        marginBottom: "7.8%",
+        backgroundColor: "rgb(240,230,140) ",
+        elevation: 0,
+      
+
     },
     conitnue_text: {
-        textAlign:'center', 
-        fontSize:22
-    }, 
-    input_details: {  
-        flexDirection:"row", 
+        textAlign: 'center',
+        fontSize: 22
+    },
+    input_details: {
+        flexDirection: "row",
         borderBottomColor: '#ccc',
         borderBottomWidth: 1,
-        width:"93%", 
-        marginLeft:"3%",
-    }, 
+        width: "92%",
+        marginLeft: "3%",
+    },
     input_text: {
-        width:"100%",
-        borderColor:'gray',
-        paddingLeft:"10%"
-    }, 
+        width: "100%",
+        borderColor: 'gray',
+        marginLeft: "7%",
+        fontSize: 16,
+        marginBottom: 3
+    },
     integration_choice: {
-        alignItems:"center",
-        marginTop:"15%",
-        marginBottom:"15%",  
-        marginLeft:"43%",    
-        marginRight:"40%",    
-        height: 35,
-        width: 35, 
+        alignItems: "center",
+        marginTop: "13%",
+        marginBottom: "15%",
+        marginLeft: "43.5%",
+        marginRight: "40%",
+        height: 27,
+        width: 27,
         borderRadius: 180,
-        backgroundColor: "rgba(134,134,134, 0.2)"
+        backgroundColor: "rgba(215,211,211,0.3)"
     },
     choice_text: {
-        marginTop:"20%"
-    }, 
+        marginTop: "15%",
+        fontSize: 14
+    },
 })
 
 export default styles;

@@ -17,30 +17,30 @@ class LoginSubsection extends Component {
         return (
             <View style={styles.login_box}>
                 <Text style={styles.box_text}>One tap login</Text>
-                <SocialPlatformIntegration {...this.props} />
+                <SocialPlatformIntegration />
                 <View style={styles.integration_choice}>
                     <Text style={styles.choice_text} >or</Text>
                 </View>
-                <View style={styles.input_details}>
-                    <CountrySelector />
-                    <TextInput
-                        style={styles.input_text}
-                        placeholder={"Enter Mobile Number"}
-                        keyboardType={"phone-pad"}
-                        maxLength={10}
-                        placeholderTextColor={'rgb(211,211,211)'}
-                        underlineColorAndroid='transparent'
-                        onChangeText={(input) => this.setState({ number: input })}
-                        value={this.state.number}
-                    ></TextInput>
-                </View>
+                    <View style={styles.input_details}>
+                        <CountrySelector />
+                        <TextInput
+                            style={styles.input_text}
+                            placeholder={"Enter mobile number"}
+                            keyboardType={"phone-pad"}
+                            maxLength={10}
+                            placeholderTextColor={'rgb(169,167,167)'}
+                            underlineColorAndroid='transparent'
+                            onChangeText={(input) => this.setState({ number: input })}
+                            value={this.state.number}
+                        ></TextInput>
+                    </View>
                 <View style={styles.continue_login}>
                     <Button
                         style={styles.continue_button}
                         warning
                         onPress={() => { Alert.alert("Hey, We are working on it!") }}
                     >
-                        <Text>CONTINUE</Text>
+                        <Text style={{ fontSize: 16, fontWeight: 'bold' }}>CONTINUE</Text>
                     </Button>
                 </View>
             </View>
