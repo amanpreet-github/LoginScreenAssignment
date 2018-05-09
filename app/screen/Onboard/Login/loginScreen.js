@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { View, Text, ImageBackground, Alert, TouchableOpacity, KeyboardAvoidingView } from 'react-native'
+import { View, Text, ImageBackground, TouchableOpacity, KeyboardAvoidingView } from 'react-native'
 import styles from './styles'
 import { Button, Toast } from 'native-base'
 import LoginSubSection from '@screen/Onboard/LoginSubsection'
@@ -32,7 +32,10 @@ class loginScreen extends Component {
                             <TouchableOpacity
                                 activeOpacity={1}
                                 onPress={() => {
-                                    Alert.alert("Hey, We are working on it!");
+                                    Toast.show({
+                                        text:"Hey We are working on it!", 
+                                        buttonText:"Okey."
+                                    })
                                 }}>
                                 <Text style={styles.skip_text}>Skip</Text>
                             </TouchableOpacity>

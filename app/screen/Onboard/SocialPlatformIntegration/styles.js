@@ -6,8 +6,8 @@ const styles = StyleSheet.create({
         flexDirection: 'row'
     },
     intergration_google_buttons: {
-        paddingLeft: "10.5%",
-        paddingRight: "13.5%",    
+        flex:1, 
+        justifyContent: 'flex-start',  
         marginTop: "5%",
         marginLeft: "3%",
         backgroundColor: 'rgb(219, 50, 54)', 
@@ -18,18 +18,20 @@ const styles = StyleSheet.create({
         width: 20,
         height: 20,
         marginRight: 5,
+        marginLeft:"20%",
         marginTop: 2
     },
     intergration_facebook_logo: {
         width: 30,
-        height: 30
+        height: 30, 
+        marginLeft:"20%"
     },
     intergration_facebook_buttons: {
-        paddingLeft: "8%",
-        paddingRight: "15%",
+        flex:1,
+        justifyContent: 'flex-start',  
         marginTop: "5%",
         marginLeft: "1.5%",
-        marginRight: "2%",
+        marginRight: "3%",
         backgroundColor: 'rgb(59,89,152)', 
         shadowColor: 'transparent',
          height: 40,

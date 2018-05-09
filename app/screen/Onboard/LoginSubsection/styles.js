@@ -57,7 +57,7 @@ const styles = StyleSheet.create({
         alignItems: "center",
         marginTop: "13%",
         marginBottom: "15%",
-        marginLeft: "43.5%",
+        marginLeft: "45%",
         marginRight: "40%",
         height: 27,
         width: 27,
