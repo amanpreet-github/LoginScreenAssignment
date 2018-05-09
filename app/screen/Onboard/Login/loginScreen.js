@@ -16,13 +16,14 @@ class loginScreen extends Component {
     }
     render() {
         return (
-            <KeyboardAvoidingView
-                behavior="padding"
-            >
-                <View style={styles.window}>
-                    <ImageBackground style={styles.backgroundImage}
-                        source={require('../../../assets/img/banner.png')}>
-                    </ImageBackground>
+            <View style={styles.window}>
+                <ImageBackground style={styles.backgroundImage}
+                    source={require('../../../assets/img/banner.png')}>
+                </ImageBackground>
+                <KeyboardAvoidingView
+                    behavior="position"
+                    enabled
+                >
                     <View style={styles.wrapper}>
                         <View style={styles.header_text}>
                             <Text style={styles.text_header}>Log In/Sign Up</Text>
@@ -33,16 +34,17 @@ class loginScreen extends Component {
                                 activeOpacity={1}
                                 onPress={() => {
                                     Toast.show({
-                                        text:"Hey We are working on it!", 
-                                        buttonText:"Okey."
+                                        text: "Hey We are working on it!",
+                                        buttonText: "Okey."
                                     })
                                 }}>
                                 <Text style={styles.skip_text}>Skip</Text>
                             </TouchableOpacity>
                         </View>
                     </View>
-                </View>
-            </KeyboardAvoidingView>
+                </KeyboardAvoidingView>
+            </View>
+
 
         )
     }

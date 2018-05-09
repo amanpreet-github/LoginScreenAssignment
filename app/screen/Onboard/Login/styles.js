@@ -6,7 +6,6 @@ const styles = StyleSheet.create({
 		height: Dimensions.get("window").height
 	},
 	wrapper: {
-		flex: 1,
 		paddingLeft: '5.5%',
 		paddingRight: '5.5%',
 	},
