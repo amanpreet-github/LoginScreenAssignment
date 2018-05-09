@@ -40,7 +40,7 @@ class CountrySelector extends React.PureComponent {
     handleFilterChange = value => {
         var re = new RegExp(value, 'gi');
         const filteredCountries =
-            value === '' ? cca2List : cca2List.filter(country => countries[country].name.common.match(re));
+            value === '' ? cca2List : (cca2List||[]).filter(country => countries[country].name.common.match(re));
         this.setState({
             filter: value,
             dataValue: ds.cloneWithRows(filteredCountries)

@@ -23,7 +23,8 @@ const styles = StyleSheet.create({
     continue_login: {
         paddingLeft: "3%",
         paddingRight: "5%",
-        marginTop: "7%"
+        marginTop: "7%",
+        justifyContent: 'center'
 
     },
     continue_button: {
